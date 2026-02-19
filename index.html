@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroStep | Antigravity Footwear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">AeroStep<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#pre-order">Pre-Order</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="DEFY GRAVITY">DEFY GRAVITY</h1>
+            <p>Step into the future with our quantum-levitation outsoles. Weightless comfort, boundless energy.</p>
+            <button id="explore-a1-btn" class="btn-primary">Explore the A-1</button>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="glow-ring"></div>
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80%22" class="floating-shoe" id="hero-shoe" style="border-radius: 20px;">
+            <div class="shadow"></div>
+        </div>
+    </header>
+
+    <section id="collection" class="collection-section">
+        <h2>The <span>Armada</span></h2>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="men">Men</button>
+            <button class="filter-btn" data-filter="women">Women</button>
+            <button class="filter-btn" data-filter="kids">Kids</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="casual">Casual</button>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            </div>
+    </section>
+
+    <section id="pre-order" class="preorder-section">
+        <div class="form-container">
+            <h2>Reserve Your <span>Pair</span></h2>
+            <p>Lock in your zero-gravity experience before the global drop.</p>
+            <form id="preorder-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select required>
+                    <option value="" disabled selected>Select Model</option>
+                    <option value="a1-core">A-1 Core (Men)</option>
+                    <option value="a1-nova">A-1 Nova (Women)</option>
+                    <option value="a1-lite">A-1 Lite (Kids)</option>
+                </select>
+                <button type="submit" class="btn-primary">Secure Pre-Order</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title">Product Name</h3>
+                    <p id="modal-price" class="price">$000</p>
+                    <p id="modal-desc">Detailed description of the quantum foam and antigravity tech used in this specific model.</p>
+                    <button id="add-to-cart-btn" class="btn-contact">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="floating-cart-btn" class="floating-cart">
+        🛒 Cart <span id="cart-count">0</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">AeroStep<span>.</span></div>
+            <p>Quantum levitation footwear for the next generation of movement.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AeroStep. Developed for Semester 3 Web App Dev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="exit-modal" class="exit-modal">
+        <div class="exit-content">
+            <span class="close-exit">&times;</span>
+            <h2>Leaving so soon?</h2>
+            <p>Our quantum-levitation footwear ensures you won't tire out, wherever your journey takes you next. Secure your pair before the drop closes.</p>
+            <button class="btn-primary" id="stay-btn">Stay & Explore</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
